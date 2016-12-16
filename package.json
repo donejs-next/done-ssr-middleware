@@ -1,6 +1,6 @@
 {
   "name": "done-ssr-middleware",
-  "version": "0.4.0-pre.0",
+  "version": "0.4.0-pre.1",
   "description": "Express/Connect middleware for DoneJS applications",
   "main": "lib/index.js",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/donejs/done-ssr-middleware.git"
+    "url": "git+https://github.com/donejs-next/done-ssr-middleware.git"
   },
   "keywords": [
     "DoneJS",
@@ -23,10 +23,10 @@
   "author": "Bitovi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/donejs/done-ssr-middleware/issues"
+    "url": "https://github.com/donejs-next/done-ssr-middleware/issues"
   },
-  "homepage": "https://github.com/donejs/done-ssr-middleware#readme",
-  "devDependencies": {
+  "homepage": "https://github.com/donejs-next/done-ssr-middleware#readme",
+  "peerDependencies": {
     "can-component": "^3.0.0-pre.9",
     "can-fixture": "^0.1.2",
     "can-list": "^3.0.0-pre.3",
@@ -34,16 +34,18 @@
     "can-map-define": "^3.0.0-pre.2",
     "can-route": "^3.0.0-pre.5",
     "can-route-pushstate": "^3.0.0-pre.4",
-    "done-autorender": "^0.9.0-pre.1",
+    "done-ssr": "git+https://github.com/donejs-next/done-autorender",
+    "done-autorender": "git+https://github.com/donejs-next/done-autorender"
+  },
+  "devDependencies": {
     "copy-dir": "0.0.8",
     "express": "^4.13.4",
-    "jquery": "^2.2.3",
-    "mocha": "^2.4.5",
+    "jquery": "^3.2.0",
+    "mocha": "^3.2.0",
     "request": "^2.69.0",
-    "spawn-mochas": "^1.1.0"
+    "spawn-mochas": "git+https://github.com/donejs-next/spawn-mochas"
   },
   "dependencies": {
-    "done-ssr": "^0.14.0-pre.0",
     "nock": "^7.2.2",
     "websocket": "^1.0.22",
     "xmlhttprequest": "^1.7.0"
